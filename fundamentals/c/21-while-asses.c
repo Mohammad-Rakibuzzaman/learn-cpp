@@ -7,11 +7,12 @@ int main() {
         i++;
         scanf("%d", &num);
         
-        if(num  <= 0){
+        if (num  <= 0) {
             break;
-        } else if(num < 100) {
-            num = num * num;
-            printf("%d ", num);
+        } 
+        if (num < 100) {
+         
+            printf("%d ", num * num);
         }
 
     }
