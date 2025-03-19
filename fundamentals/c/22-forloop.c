@@ -93,27 +93,77 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main(void)
+// {
+    
+//     int sum = 0;
+
+//     for (int i=0; i < 10; i++) {
+//         int n;
+//         scanf("%d", &n);    
+
+//         if (n >= 0) {
+//             sum += n;
+//         } else {
+//             continue;
+//         }
+
+//     }
+
+//     printf("%d", sum);
+
+//     return 0;
+// }
+// int main () {
+//     int i;
+//     for (i = 0; i < 5; i++) {
+//         printf("%d\n", i);
+//     }
+
+//     for (; i < 10; i++) {
+//         printf("%d\n", i);
+//     }
+// }
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
+    int i;
     
-    int sum = 0;
-
-    for (int i=0; i < 10; i++) {
-        int n;
-        scanf("%d", &n);    
-
-        if (n >= 0) {
-            sum += n;
-        } else {
-            continue;
-        }
-
+    // Start with 0, loop till 5 (inclusive) using ++
+    for (i = 0; i <= 5; i++) {
+        printf("%d\n", i);
     }
 
-    printf("%d", sum);
+    // Loop back to 0 (inclusive) using --
+    for (i = 4; i >= 0; i--) {
+        printf("%d\n", i);
+    }
+
+    // Loop till 10 (inclusive) using +=2
+    for (i = 2; i <= 10; i += 2) {
+        printf("%d\n", i);
+    }
+
+    // Loop back to 1 (inclusive) using /=2
+    for (i = 5; i >= 1; i /= 2) {
+        printf("%d\n", i);
+    }
+    
+    // Loop till 10 (inclusive) using *=2
+    for (i = 2; i <= 10; i *= 2) {
+        printf("%d\n", i);
+    }
+
+    // Loop back to 0 (inclusive) using -=2
+    for (i = 6; i >= 0; i -= 2) {
+        printf("%d\n", i);
+    }
 
     return 0;
 }
